@@ -1,3 +1,7 @@
+import os
+
+os.system("clear")
+
 # Constantes
 JORNADA_NORMAL = 40
 H_DOBLE_RANGO = 9
@@ -24,8 +28,8 @@ else:
 
     salario_total = salario_normal + salario_extra
 print("+-- Resultados --+")
-print(f"Salario por hora: {salario_hora}")
-print(f"Horas trabajadas: {horas_trabajadas}")
-print(f"Salario normal: ", salario_normal)
-print(f"Salario extra: {salario_extra}")
-print(f"Salario total: {salario_total}")
+print(f"-> Salario por hora: {salario_hora}")
+print(f"-> Horas trabajadas: {horas_trabajadas}")
+print(f"-> Salario normal: ", salario_normal)
+print(f"-> Salario extra: {salario_extra}")
+print(f"-> Salario total: {salario_total}")
