@@ -17,6 +17,7 @@ print("OPCIONES : 1) PIEDRA, 2) PAPEL, 3) TIJERA")
 opcion_usuario = int(input("> Ingresa tu opcion: "))
 if opcion_usuario not in opciones:
     print("Opcion no valida")
+    exit(1)
 
 # Obtener opcion del PC
 opcion_pc = random.randint(1, 3)

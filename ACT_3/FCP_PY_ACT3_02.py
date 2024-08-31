@@ -1,5 +1,3 @@
-from franLib import getNumber
-
 # Constantes
 JORNADA_NORMAL = 40
 H_DOBLE_RANGO = 9
@@ -9,8 +7,8 @@ horas_trabajadas, horas_extra = None, None
 salario_hora, salario_extra, salario_normal, salario_total = None, None, None, None
 
 # Entrada
-horas_trabajadas = getNumber("Ingresa horas trabajadas (SEMANA): ")
-salario_hora = getNumber("Ingresa salario (HORA): ", float)
+horas_trabajadas = int(input("Ingresa horas trabajadas (SEMANA): "))
+salario_hora = float(input("Ingresa salario (HORA): "))
 
 salario_normal = JORNADA_NORMAL * salario_hora
 

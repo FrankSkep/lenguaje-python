@@ -1,4 +1,3 @@
-from franLib import getNumber
 # constantes
 LOCAL = 3.0
 NACIONAL = 7.0
@@ -6,8 +5,8 @@ INTL = 9.0
 IVA = 0.16
 
 # entrada
-minutos = getNumber("Ingrese minutos de la llamada: ")
-tipo_llamada = getNumber("Ingrese tipo de Llamada\n1. Local\n2. Nacional\n3. Internacional\n: ")
+minutos = int(input("Ingrese minutos de la llamada: "))
+tipo_llamada = int(input("Ingrese tipo de Llamada\n1. Local\n2. Nacional\n3. Internacional\n: "))
 
 # variables necesarias
 subtotal, min_adicionales, total = 0, 0, 0

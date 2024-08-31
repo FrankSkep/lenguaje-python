@@ -11,15 +11,15 @@ cal_menor = ex1
 # Evaluaciones
 if ex2 < cal_menor:
     cal_menor = ex2
-elif ex3 < cal_menor:
+if ex3 < cal_menor:
     cal_menor = ex3
-elif ex4 < cal_menor:
+if ex4 < cal_menor:
     cal_menor = ex4
-elif ex5 < cal_menor:
+if ex5 < cal_menor:
     cal_menor = ex5
 
 prom = (ex1 + ex2 + ex3 + ex4 + ex5 - cal_menor) / 4
 
 print(f"Calificacion anulada: {cal_menor}")
 
-print(f"Promedio final: {prom}")
+print(f"Promedio final: {prom:.2f}")

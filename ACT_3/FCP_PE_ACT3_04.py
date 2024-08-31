@@ -1,12 +1,10 @@
-from franLib import getNumber
-
 # constantes
 RANGO_1 = 4
 RANGO_2 = 15
 RANGO_3 = 50
 IVA = 0.16
 
-m3 = getNumber("Ingrese los M3 de agua consumidos: ")
+m3 = int(input("Ingrese los M3 de agua consumidos: "))
 
 # Calcular el subtotal según el rango de consumo
 if m3 <= RANGO_1:

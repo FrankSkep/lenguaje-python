@@ -1,11 +1,9 @@
-from franLib import getNumber
-
 N_CALIF = 3
 calif1, calif2, calif3, prom = 0, 0, 0, 0
-
-calif1 = getNumber("Ingresa calificacion 1: ", float)
-calif2 = getNumber("Ingresa calificacion 2: ", float)
-calif3 = getNumber("Ingresa calificacion 3: ", float)
+8
+calif1 = float(input("Ingresa calificacion 1: "))
+calif2 = float(input("Ingresa calificacion 2: "))
+calif3 = float(input("Ingresa calificacion 3: "))
 
 prom = (calif1 + calif2 + calif3) / N_CALIF
 
