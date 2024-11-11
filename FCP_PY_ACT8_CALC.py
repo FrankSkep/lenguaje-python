@@ -15,18 +15,17 @@ class CalculadoraApp(ctk.CTk): # heredo de la clase CTk
         self.display.grid(row=0, column=0, pady=20, padx=20, sticky="nsew")
 
         self.create_buttons()
-
+        
     def create_buttons(self):
         buttons_frame = ctk.CTkFrame(self)
         buttons_frame.grid(row=1, column=0, pady=10, padx=10, sticky="nsew")
 
         buttons = [
-            ('7', 1, 0), ('8', 1, 1), ('9', 1, 2),
-            ('4', 2, 0), ('5', 2, 1), ('6', 2, 2),
-            ('1', 3, 0), ('2', 3, 1), ('3', 3, 2),
-            ('0', 4, 1), ('.', 4, 0),
-            ('+', 1, 3), ('-', 2, 3), ('*', 3, 3), ('/', 4, 3),
-            ('C', 4, 2), ('=', 5, 0, 1, 4)
+            ('7', 1, 0), ('8', 1, 1), ('9', 1, 2), ('/', 1, 3),
+            ('4', 2, 0), ('5', 2, 1), ('6', 2, 2), ('*', 2, 3),
+            ('1', 3, 0), ('2', 3, 1), ('3', 3, 2), ('-', 3, 3),
+            ('0', 4, 0), ('.', 4, 1), ('C', 4, 2), ('+', 4, 3),
+            ('=', 5, 0, 1, 4)
         ]
 
         for button in buttons:
@@ -53,7 +52,7 @@ class CalculadoraApp(ctk.CTk): # heredo de la clase CTk
             try:
                 expression = self.display.get()
                 result = eval(expression)
-                self.show_result(result)
+                self.show_result("Hola Mundo")
             except Exception as e:
                 self.show_result("Error")
         else:
